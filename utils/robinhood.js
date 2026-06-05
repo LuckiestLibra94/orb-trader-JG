@@ -75,7 +75,7 @@ async function login(email, password, mfa_code) {
   if (mfa_code) payload.mfa_code = mfa_code;
 
   console.log("[AUTH] Attempting Robinhood login...");
-  const data = await request("POST", "/oauth2/token/", payload, null, "json");
+  const data = await request("POST", "/oauth2/token/", payload, null, "form");
 
   if (data.access_token) {
     _token = data.access_token;
