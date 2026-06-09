@@ -199,4 +199,4 @@ function scheduleDailyReauth() {
   scheduleNext();
 }
 
-module.exports = { ensureLoggedIn, submitSmsCode, getPendingWorkflow, scheduleDailyReauth };
+module.exports = { ensureLoggedIn, submitSmsCode, getPendingWorkflow, scheduleDailyReauth, validateWhopLicense };
