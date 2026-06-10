@@ -70,7 +70,7 @@ async function login(email, password, mfa_code) {
     device_token: _deviceToken,
     try_passkeys: false,
     token_request_path: "/login",
-    create_read_only_secondary_token: true
+    create_read_only_secondary_token: false
   };
   if (mfa_code) payload.mfa_code = mfa_code;
 
